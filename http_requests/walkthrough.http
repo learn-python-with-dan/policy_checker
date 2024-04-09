@@ -1,0 +1,33 @@
+
+### Good positive Comment
+POST {{base_url}}/comments
+Content-Type: application/json
+
+{
+  "content": "I love the way you code."
+}
+
+### Bad positive Comment
+POST {{base_url}}/comments
+Content-Type: application/json
+
+{
+  "content": "I love you!"
+}
+
+
+### Good negative Comment
+POST {{base_url}}/comments
+Content-Type: application/json
+
+{
+  "content": "I don't like your code because it is unstructured in my opinion."
+}
+
+### Bad negative Comment
+POST {{base_url}}/comments
+Content-Type: application/json
+
+{
+  "content": "My 3 year old daughter knows to code better than you!"
+}
